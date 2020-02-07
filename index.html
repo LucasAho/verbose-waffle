@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lucas Aho's Portfolio</title>
+
+        <!--Font Links-->
+        <link href="https://fonts.googleapis.com/css?family=Asap+Condensed|Big+Shoulders+Display|Josefin+Sans|Pontano+Sans&display=swap" rel="stylesheet">
+        
+        <!--Bootstrap/CSS link-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+        
+        <!--Jquery-->
+        <script type="text/javascript" src=https://code.jquery.com/jquery-3.3.1.min.js></script>
+
+        <!--Firebase References-->
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-database.js"></script>
+    </head>
+
+    <body>
+        <!--Site Container-->
+        <div class="container">
+
+            <!--Header Block--> 
+            <div class="row mt-1 head">
+                <div class= "col-12">
+                    <h1 class="text-center font-weight-bold text-dark mt-3">Lucas Aho</h1>
+                </div>
+            </div>
+            <!--Header Block-->  
+
+            <!--Nav bar to social media links-->
+            <div class="row justify-content-center" id="navBar">
+                
+                <div class="navBox mx-2 px-1">
+                    <a class="mx-2" href="https://www.linkedin.com/in/lucas-aho-679569193/" title="Connect with my LinkedIn!"><img class="logo my-2 m-1" src="assets/images/LI-In-Bug.png"></a>
+                    <a class="mx-2" href="https://twitter.com/LucasAho" title="Follow my twitter!"><img class="logo my-2 m-1" src="assets/images/twitter-logo.png"></a>
+                </div>
+                
+                    <!--<img class="mx-4" src="assets/images/me-iconSmol.png">-->
+                
+                <div class="navBox mx-2 px-1">
+                    <a class="mx-2" href="https://github.com/LucasAho" title="Check out my GitHub!"><img class="logo my-2 m-1" src="assets/images/git-icon.png"></a>
+                    <a class="mx-2" href="contact.html" title="Contact me!"><img class="logo my-2 m-1" src="assets/images/mail-icon.png"></a>
+                </div>
+                <!--<div class="col-12 mb-n1 text-center">Checkout my Social Media!</div>-->
+            </div>            
+            <!--Nav bar to social media links-->
+          
+            <!--About Me Block-->
+            <div class="row my-3 py-2">   
+                
+                <div class="col-8 mx-2 border border-white">
+                    <h2 class="row px-1 mb-1 about">
+                        About Me
+                    </h2>
+                    <p class= "row mt-1 pl-3 pr-2">
+                        Hello! My name is Lucas, and I am a learning full stack developer located out of Boulder, Colorado. 
+                        I focus on writing clean, reliable, and efficient code.
+                        When I'm not busy coding, I rock climb, bike, and run a DnD group.
+                        <br>
+                        I learned bits and pieces of coding throughout my life but because of my DU full stack development boot camp education, 
+                        I am a confident programmer with proficiency in a multitude of web-based languages. By the end of my boot camp, 
+                        I will be adept in all aspects of full stack developing and have completed three group projects.
+                        <br>
+                        Outside of the programming world, I have managed multiple teams and stores, and completed seminars and classes teaching leadership qualities. 
+                        These skills give me a welcome advantage in working with project teams, which I will bring with me into my new career.
+                    </p>                    
+                </div>
+                
+                <!--Profile IMG Here-->
+                <img class="profile-image float-right" src="assets\images\Lucas_2017 (1).png">
+
+            </div>
+            <!--About Me Block-->
+
+            <!--Portfolio Link Block-->
+            <div class="row mx-auto mb-5" id="portRow">
+
+                <!--Hangman Card-->
+                <div class="col-4 card ml-n2 my-2" style="width: 45%;">
+                    
+                    <img src="assets/images/Hangman-IMG.png" class="card-img-top mt-3 mx-auto">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Hangman Game</h5>
+                        <p class="card-text">Project built proficiency in javascript</p>
+                        <a href="https://lucasaho.github.io/Word-Guess-Game/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Hangman Card-->
+
+                <!--Crystal Collector Card-->
+                <div class="col-4 card ml-1 my-2" style="width: 45%;">
+                    
+                    <img src="assets/images/Crystal-IMG.png" class="card-img-top mt-3 mx-auto">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Crystal Collector</h5>
+                        <p class="card-text">Project built proficiency in jQuery</p>
+                        <a href="https://lucasaho.github.io/unit-4-game/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Crystal Collector Card-->
+                    
+                <!--Giphy API Card-->
+                <div class="col-4 card my-2 ml-1" style="width: 45%;">
+                    
+                    <img src="assets/images/Giphy-IMG.png" class="card-img-top mt-3 mx-auto">
+                           
+                    <div class="card-body">
+                        <h5 class="card-title">Giphy API</h5>
+                        <p class="card-text">Project built proficiency in API implementation</p>
+                        <a href="https://lucasaho.github.io/Giphy-Week-Six/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Giphy API Card-->
+            </div>
+            <!--Portfolio Link Block-->
+            
+            <!--Portfolio Link Block-->
+            <div class="row mx-auto mb-5" id="portRow">
+                <!--Animal Trivia Card-->
+                <div class="col-4 card my-2 ml-n2" style="width: 45%;">
+                    
+                    <img src="assets/images/Trivia-IMG.png" class="card-img-top mt-3 mx-auto">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Animal Trivia</h5>
+                        <p class="card-text">Project built proficiency in JS timers</p>
+                        <a href="https://lucasaho.github.io/TriviaGame/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Animal Trivia Card-->
+
+                <!--Train Scheduler Card-->
+                <div class="col-4 card my-2 ml-1" style="width: 45%;">
+                    
+                    <img src="assets/images/Train-IMG.png" class="card-img-top mt-3 mx-auto">
+                               
+                    <div class="card-body">
+                        <h5 class="card-title">Train Scheduler</h5>
+                        <p class="card-text">Project built proficiency in Firebase and data storage</p>
+                        <a href="https://lucasaho.github.io/Train-Scheduler" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Train Scheduler Card-->
+
+                <!--Ski Card-->
+                <div class="col-4 card my-2 ml-1" style="width: 45%;">
+                    
+                    <img src="assets\images\Ski-IMG2.png" class="card-img-top mt-3 mx-auto">
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Colorado Ski and Board Report</h5>
+                        <p class="card-text">Project built proficiency in team management and cooperation</p>
+                        <a href="https://lucasaho.github.io/Project1/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Ski Card-->
+            </div>    
+            <!--Portfolio Link Block-->
+            
+            <!--Portfolio Link Block-->
+            <div class="row mx-auto mb-5" id="portRow">
+                <!--LIRI Card-->
+                <div class="col-4 card ml-n2 my-2" style="width: 45%;">
+                    
+                    <img src="assets\images\LIRI-IMG.png" class="card-img-top mt-3 mx-auto">
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Language Interpretation and Recognition Interface</h5>
+                        <p class="card-text">Project built proficiency in Node and npm packages</p>
+                        <a href="https://github.com/LucasAho/LIRI-Bot" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--LIRI Card-->
+
+                <!--Congo Card-->
+                <div class="col-4 card ml-1 my-2" style="width: 45%;">
+                    
+                    <img src="assets\images\Congo-IMG.png" class="card-img-top mt-3 mx-auto">
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Congo Store Interface</h5>
+                        <p class="card-text">Project built proficiency in mysql and node interactions</p>
+                        <a href="https://github.com/LucasAho/CongoStore" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Congo Card-->
+
+                <!--Friend Finder Card-->
+                <div class="col-4 card ml-1 my-2" style="width: 45%;">
+                    
+                    <img src="assets\images\workinprogress-img.png" class="card-img-top mt-3 mx-auto">
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Friend Finder</h5>
+                        <p class="card-text">Project built proficiency in express and server building</p>
+                        <a href="https://quiet-gorge-84311.herokuapp.com/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Friend Finder Card-->
+
+            </div>
+            <!--Portfolio Link Block-->
+
+            <!--Portfolio Link Block-->
+            <div class="row mx-auto mb-5" id="portRow">
+                
+                  <!--Burger Shop Card-->
+                  <div class="col-4 card ml-1 my-2" style="width: 45%;">
+                    
+                    <img src="assets\images\workinprogress-img.png" class="card-img-top mt-3 mx-auto">
+                        
+                    <div class="card-body">
+                        <h5 class="card-title">Eat-Da-Burger</h5>
+                        <p class="card-text">Project built proficiency in express and handlebars</p>
+                        <a href="https://arcane-brook-03768.herokuapp.com/" class="btn btn-primary">Visit page</a>
+                    </div>
+                </div>
+                <!--Burger Shop Card-->
+
+            </div>
+            <!--Portfolio Link Block-->
+
+
+            <!--Footer Block-->           
+            <span class="text-muted border-top border-white py-3 footer">Copyright©</span>           
+            <!--Footer Block-->
+
+        </div>
+        <!--Site Container-->
+     
+    </body>
+
+    <!--JS Reference-->    
+    <script src="assets/javascript/app.js"></script>
+</html>

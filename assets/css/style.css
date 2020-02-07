@@ -1,0 +1,70 @@
+* {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+   /*font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;*/
+
+body {
+   background-color: rgb(192, 220, 224);
+}
+
+.profile-image {
+    width:1296px;
+    height:1936px;
+    max-width: 30%;
+    height: auto;    
+}
+
+#email-col {
+   margin-bottom: auto; 
+}
+
+.navBox {
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.logo {
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+}
+
+#navBar {
+    align-items: center;
+}
+
+#aboutBox {
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgb(192, 220, 224);
+}
+
+.footer {
+    bottom: 0;
+    position: relative;
+}
+.footer2 {
+    bottom: 0;
+    position: absolute;
+}
+
+.head {
+    font-family: 'Pontano Sans', sans-serif;
+
+}
+.about {
+    font-family: 'Pontano Sans', sans-serif;
+
+}
+
+ 
