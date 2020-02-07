@@ -26,18 +26,9 @@ body {
    margin-bottom: auto; 
 }
 
-.navBox {
+.navbar {
     border: 1px solid rgba(0,0,0,.125);
-}
-
-.logo {
-    justify-content: center;
-    width: 30%;
-    height: 30%;
-}
-
-#navBar {
-    align-items: center;
+    justify-content:center;
 }
 
 #aboutBox {
