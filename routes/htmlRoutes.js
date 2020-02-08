@@ -1,9 +1,10 @@
 module.exports = function (app) {
-    // Load index page
+    //Route for index page
     app.get("/", function (req, res) {
         res.render("index", {
         });
     });
+    //Route for contact page
     app.get("/contactme", (req, res) => {
         res.render("contact", {
 

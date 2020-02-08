@@ -1,20 +1,4 @@
-console.log("hi there");
 $(function () {
-    //Contact info is stored in Firebase until better method learned
-    var firebaseConfig = {
-        apiKey: "AIzaSyB06pMMLLO-FUx3wUwJVfmsE9VEpLlCBB0",
-        authDomain: "portfolio-contact-page-5016a.firebaseapp.com",
-        databaseURL: "https://portfolio-contact-page-5016a.firebaseio.com",
-        projectId: "portfolio-contact-page-5016a",
-        storageBucket: "portfolio-contact-page-5016a.appspot.com",
-        messagingSenderId: "854579126431",
-        appId: "1:854579126431:web:fb4b200a9a677c2ff602aa"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
-    var database = firebase.database();
-
     
     //Function for email validation
     const validate = (email) => {
@@ -35,37 +19,33 @@ $(function () {
             database.ref().push(emailUser);
         }
     }
-
-    //On click for message submit button
-    $("#msg-submit").on("click", function(){
-        event.preventDefault();
-        
-    });
-
     //On click for Contact --> Home Button
     $("#home-btn").on("click", function () {
         event.preventDefault();
         location.href = "/";
     });
 
+    //Click opens contact handlebar
     $("#contactClick").on("click", function () {
         event.preventDefault();
-       
+        //gets contact route
         $.ajax("/contact", {
             type: "GET"
         }).then(res => {
             location.href = "/contactme";
         });
     });
+
+    //Click sends new message
     $("#sendIt").on("click", event => {
         event.preventDefault();
-
+        //Creates object for new contact message
         let userContact = {
             name: $("#name").val().trim(),
             email: validate($("#email-input").val().trim()),
             message: $("#message").val().trim()
         };
-
+        //Posts new message to nodemailer route
         $.ajax("/contact", {
             type: "POST",
             data: userContact

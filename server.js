@@ -1,3 +1,4 @@
+//Node package requirements
 const express = require('express');
 const exphbs = require("express-handlebars");
 const cors = require("cors");
@@ -5,6 +6,7 @@ const cors = require("cors");
 var PORT = process.env.PORT || 3000;
 
 const app = express();
+
 // Middleware
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
