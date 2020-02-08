@@ -1,0 +1,60 @@
+
+        <!--Site Container-->
+        <div class="container">
+
+            <!--Header Block--> 
+            <header class="row mt-1">
+                <div class= "col-12">
+                    <h1 class="float-left text-center font-weight-bold text-dark mt-3 mr-3">Contact Me</h1>
+                </div>
+                <div class= "col-12">
+                    <h3 class= "float-left text-sm mt-4 pt-1 text-left">Fill out the form, and I'll get back to you soon</h3>
+                </div>
+            </header>
+            <!--Header Block-->  
+
+            <!--Email block-->
+            <div class="row">
+                <div class="col-4" id="email-col">
+                    <form action="/contact" method="post" role="form">
+                    <fieldset>
+                        <div class="form-group">
+                          <label for="name">Your Name</label><br>
+                          <input type="text" id="name" name="name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Your E-mail</label><br>
+                          <input type="text" id="email" name="email" placeholder="john.doe@email.com" required>
+                        </div>
+                        <div class="form-group">
+                          <label for="message">Write your message</label><br>
+                          <textarea id="message" name="message" rows="3" placeholder="........." required></textarea>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Send Message</button>
+                        <input class="btn btn-dark" type="reset" value="Clear">
+                        <a href="#" class="btn btn-dark" id="home-btn">Home</a>
+                      </fieldset>
+                    </form>
+                      
+                 
+
+                    <!--Email Form-->
+                </div> 
+                <div class="col-6 mt-5">
+                  {{reply}}
+                </div>
+                   
+                
+            </div>
+            <!--Email block-->
+
+            <!--Footer Block-->           
+            <span class="text-muted border-top border-white py-3 footer2">Copyright©</span>           
+            <!--Footer Block-->
+        </div>
+        <!--Site Container-->
+
+        
+
+    
+  
