@@ -1,24 +1,18 @@
 # Port2.1
-The updated and much improved version of my portfolio https://ancient-sands-70959.herokuapp.com/
+This portfolio takes the layout of the original 2.0 and deploys it to a heroku server, allowing express routing and the use of nodemailer for my contact form. Checkout the deployed portfolio here: https://ancient-sands-70959.herokuapp.com/
 
 ## Description
-This website was made as an update to my previous portfolio, which was made with much less coding experience. The portfolio is built more on my own creativity than a homework assignment, and displays mobile responsive, concise coding. While continued improvements will be made to this portfolio, it will be the base for my future career in web development. The site contains a header with nav links to LinkedIn, Twitter, Github, and a contact page.
-It also holds a small about me section and profile image, followed by three columns of links to past projects.
-The contact page stores user inputted info in my own firebase database until I'm able to set up a better system.
+While I was happy with the layout of Port2.0 (https://github.com/LucasAho/Port2.0), I had yet to implement a proper email form and update elements. I took this update as an opportunity to learn Nodemailer, adding an express server that could be run on Heroku and a MVC framework to organize my code. I also drew the thumbnails for the recent showcase elements, and removed some outdated projects. This express server will be especially helpful if I add the highscore tracker across my deployed games, which is my only remaining plan for improvment (at the moment).
 
 ## Plan for Improvement
 * Highscore section that tracks scores on all portfolio games
-* Make nav more intuitive
-* Fix contact section to actually send emails, rather than storing them. 
 
 ## File Infrastructure
 
-### HTML
-* Index.html: Contains main site content and most of the formatting with bootstrap. Holds links to all neccessary languages and other sites. 
-* Contact.html: Layout for user contact form. Info is stored in firebase and features home button back to main page.
+### Public/Views
+    * images: holds thumbnails for app showcase and logos for nav bar. Also profile pricture and placeholder image.
+### Controllers
 
-### CSS
-* style.css: While most of the site formatting is down via bootstrap, fonts and a few specific display elements are set within css
 
-### JS
-* app.js: App.js currently only runs firebase connection and email input verification from contact field, but expansion is planned with highscore tracking.
+### Server
+
